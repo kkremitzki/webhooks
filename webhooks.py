@@ -99,7 +99,7 @@ def index():
 
     # Gather data
     try:
-        payload = loads(request.data)
+        payload = loads(request.values['payload'])
     except:
         abort(400)
 
